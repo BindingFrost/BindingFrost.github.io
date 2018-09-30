@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+}
+table, th, td {
+    border: 1px solid black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+.tabel{
+    background-color: #808684;
+}
+.even {
+    background-color:#A5ABA3;
+}
+.oneven{
+    background-color: #808684;
+}
+.tabel:hover, .oneven:hover, .even:hover{
+    background-color: goldenrod;
+}
+body {
+    background: url(./IMG_572554.png)
+}
+.contentbox {
+    width: 900px;
+    height: 720px;
+    background-color: #4E565B;
+
+    padding: 25px;
+    margin: 25px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+.contentbox > h1{
+    color: black;
+
+}
+.contentbox > h2{
+    color: black
+}
+.contentbox > p{
+    color: black
+}
+.contentbox > table{
+    color: black
+}
+
