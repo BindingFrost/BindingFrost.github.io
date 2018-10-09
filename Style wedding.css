@@ -1,0 +1,27 @@
+body {
+    background: url(./kamerplantwedding.jpg)
+}
+body {
+    background-size: cover
+}
+.container {
+    height:100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0% auto;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+.list-group, .list-group-item {
+    width: 400px;
+}
+.list-group-item > .btn-danger{
+    float: right
+}
+#aanmelding {
+    width: 600px;
+}
+.h2 {
+    font-family: 'Courier New', Courier, monospace;
+}

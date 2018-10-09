@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script> src="https://code.jquery.com/ui/1.12.1/jquery-ui.js%22%3E"</script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Style wedding.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Navigatie
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="Wedding Site main page.html">Home</a>
+      <a class="dropdown-item" href="Bekijk Lijst.html">Bekijk lijst</a>
+      <a class="dropdown-item" href="Creeër Lijst.html">Creeër lijst</a>
+      <a class="dropdown-item" href="Aanmelden wedding.html">Aanmelden</a>
+    </div>
+  </div> 
+  <script>
+ /*function tableInputKeyPress(e){
+    e=e||window.event;
+    var key = e.keyCode;
+    if(key==13) Enter
+    {
+     return example_append(), false;
+    }
+  } */
+ function deleteItem(item){
+  
+  
+                        {$('li').remove("#item" + item);
+                        }                       
+ }
+
+var itemID = 4;
+    $( function() {
+      $( ".list-group" ).sortable();
+      $( ".list-group" ).disableSelection();
+    } );
+
+
+    function example_append() {''
+        var item1 = $( "<li class= 'list-group-item' id='item" + itemID + "'> " + $('.form-control').val() + "<button type='button'  class='btn btn-danger' onclick='deleteItem("+ itemID +")'> Verwijder item</button></li>" );
+    $('.list-group').append(item1)
+
+    itemID++
+    
+}
+</script>
+ <div class= "container"> 
+<ul class="list-group">
+  <li class="list-group-item" id="item1">Champagne <button   class="btn btn-danger "id="item1"onclick="deleteItem(1)"> Verwijder item</button></li>
+  <li class="list-group-item" id="item2">Wipstoel <button   class="btn btn-danger "id="item1"onclick="deleteItem(2)"> Verwijder item</button> </li> 
+  <li class="list-group-item" id="item3">Koffiezetapparaat <button   class="btn btn-danger "id="item1"onclick="deleteItem(3)"> Verwijder item</button></li>
+</ul>
+&nbsp;
+<form>
+  <div class= "form-group">
+      <input type="text" class="form-control" id="new-item" placeholder="Voer hier product in">
+  </div>
+  <button type="button" value="append" class="btn btn-primary" onclick="example_append(), reset()">Toevoegen</button>
+</form>
+ </div>
+
+  
+</body>
+</html>
